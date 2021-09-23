@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HistryFragment"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="60dp"
+        app:cardCornerRadius="17dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Please note"
+            android:paddingLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="#CDCACA"
+            android:textColor="@color/black"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp">
+
+            <TextView
+                android:id="@+id/note_f_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DELIVERY TO MAINLAND"
+                android:textColor="#C6C3C3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/note_txt_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N1000 - N2000"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/note_f_1"
+                app:layout_constraintTop_toBottomOf="@+id/note_f_1"
+                />
+
+            <View
+                android:id="@+id/note_view_d"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#959595"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/note_txt_1"
+                />
+
+            <TextView
+                android:id="@+id/note_f_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="DELIVERY TO ISLAND"
+                android:textColor="#C6C3C3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/note_view_d"
+                />
+
+            <TextView
+                android:id="@+id/note_txt_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N2000 - N3000"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/note_f_2"
+                app:layout_constraintTop_toBottomOf="@+id/note_f_2"
+                />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="#615D5D"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/note_txt_2"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <Button
+                android:id="@+id/procd_btn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Proceed"
+                android:textAllCaps="false"
+                android:background="@drawable/cardbox"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>
